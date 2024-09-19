@@ -32,12 +32,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-white font-bold text-xl">
-              My Website
+            <Link href="/" className="text-white font-bold text-2xl font-mono ">
+           Bloggers
             </Link>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-4 text-xl">
               <Link href="/" className="text-gray-300 hover:text-white">
                 Home
               </Link>
