@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
@@ -9,9 +9,7 @@ const ContactPage: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left Side: Contact Info and Map */}
         <div className="space-y-8">
-          <h2 className="text-4xl font-extrabold ">
-            Get in Touch
-          </h2>
+          <h2 className="text-4xl font-extrabold ">Get in Touch</h2>
           <p className="text-lg ">
             Feel free to reach out to us anytime. We are available to answer
             your questions and discuss your project needs.
@@ -25,25 +23,20 @@ const ContactPage: React.FC = () => {
             </div>
             <div className="flex items-center space-x-4">
               <FaEnvelope className="text-red-500 w-6 h-6" />
-              <span className="text-lg ">
-                info@yourcompany.com
-              </span>
+              <span className="text-lg ">info@yourcompany.com</span>
             </div>
             <div className="flex items-center space-x-4">
               <FaMapMarkerAlt className="text-red-500 w-6 h-6" />
-              <span className="text-lg ">
-                123 Street, City, Country
-              </span>
+              <span className="text-lg ">123 Street, City, Country</span>
             </div>
           </div>
 
           {/* Google Maps Embed */}
           <div className="w-full h-64 bg-gray-200">
             <iframe
-              className="w-full h-full rounded-md "
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509413!2d144.95373531590487!3d-37.81627974201156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d0f420aabf!2sFlinders+St+Station%2C+Melbourne+VIC%2C+Australia!5e0!3m2!1sen!2sin!4v1636107242055!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7014.19836658875!2d77.31471974111156!3d28.476559533811212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce70d50453351%3A0x196d2dfbb34b67f5!2sAggarwal%20Sweets!5e0!3m2!1sen!2sin!4v1726841504403!5m2!1sen!2sin"
+              className="w-full h-full object-contain"
               loading="lazy"
-              allowFullScreen={true}
             ></iframe>
           </div>
         </div>
@@ -59,9 +52,7 @@ const ContactPage: React.FC = () => {
           />
 
           <form className="bg-gray-900 p-6 rounded-md  shadow-md space-y-6">
-            <h2 className="text-2xl font-semibold ">
-              Contact Form
-            </h2>
+            <h2 className="text-2xl font-semibold ">Contact Form</h2>
 
             <div className="space-y-4">
               <div>
