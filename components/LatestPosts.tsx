@@ -28,7 +28,7 @@ const LatestPosts:React.FC<latestPostChildrenProps> = ({value}) => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-7xl gap-3 m-auto px-2  pt-5 ">
-            {value?.slice(1, 29).map((value) => {
+            {value?.slice(1, 9).map((value) => {
               return <BlogData value={value} key={value._id} />;
             })}
           </div>

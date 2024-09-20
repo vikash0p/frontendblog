@@ -7,8 +7,8 @@ const NewsletterForm = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Name:", name);
-    console.log("Email:", email);
+    // console.log("Name:", name);
+    // console.log("Email:", email);
     setName("");
     setEmail("");
   };

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default async function BlogId({ params }: { params: { id: string } }) {
   const data: BlogDocument = await fetchBlogById(params.id);
-  console.log("🚀 ~ file: BlogId.tsx:7 ~ data:", data);
+  // console.log("🚀 ~ file: BlogId.tsx:7 ~ data:", data);
 
   return (
     <div className="max-w-7xl m-auto grid grid-cols-1 lg:grid-cols-2 justify-around gap-5 py-12">
