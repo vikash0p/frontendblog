@@ -22,14 +22,14 @@ const TopBar = () => {
         </div>
 
         {/* Center - Logo */}
-        <div className="md:flex justify-center hidden">
+        <div className="md:flex justify-center hidden forced-color-adjust-auto">
           <Image
-            src="/log.webp" // Add the path to your logo
+            src="/Screenshot 2024-09-19 160826.png" // Add the path to your logo
             alt="Site Logo"
-            width={80}
-            height={50}
+            width={500}
+            height={500}
             priority
-            className="rounded-full h-14 w-14 md:w-18 md:h-18"
+            className=" h-14 w-52 md:w-18 md:h-18 drop-shadow-2xl"
           />
         </div>
         <div className="md:hidden">
