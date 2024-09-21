@@ -6,7 +6,7 @@ import Layout from "@/utils/Layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const artistAuraMetadata: Metadata = {
-  metadataBase: new URL("https://frontendblog-nu.vercel.app/"),
+  // metadataBase: new URL("https://frontendblog-nu.vercel.app/"),
   title: {
     default: "Artist Aura | Insights into Art, Creativity, and Expression",
     template: "%s | Artist Aura",

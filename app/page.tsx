@@ -7,7 +7,6 @@ import TrendingNow from "@/components/TrendingNow";
 import Modern from "@/components/Modern";
 import LatestPosts from "@/components/LatestPosts";
 
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,8 +17,8 @@ export const metadata: Metadata = {
     title: "Your Blog | Stories, Insights, and Inspiration",
     description:
       "Explore engaging articles on Your Blog. From personal stories to creative inspiration and life hacks, discover unique content that keeps you informed and inspired.",
-    url: "https://frontendblog-nu.vercel.app/", // Replace with your blog URL
-    images: "/favicon/android-chrome-512x512.png", // Path to your blog's home banner image
+    url: "https://frontendblog-nu.vercel.app/",
+    images: "/favicon/android-chrome-512x512.png",
     siteName: "Your Blog",
   },
   twitter: {
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
     title: "Your Blog | Stories, Insights, and Inspiration",
     description:
       "Discover engaging stories, insights, and inspiration on Your Blog. Explore articles across various topics and stay inspired.",
-    images: "/favicon/android-chrome-512x512.png", // Path to your blog's image for Twitter
+    images: "/favicon/android-chrome-512x512.png",
   },
 };
 
@@ -36,8 +35,7 @@ const Home = async () => {
   // console.log("🚀 ~ file: page.tsx:7 ~ blog:", data);
   return (
     <div>
-
-      <TrendingNow  value={data} />
+      <TrendingNow value={data} />
       <Modern value={data} />
       <LatestPosts value={data} />
     </div>

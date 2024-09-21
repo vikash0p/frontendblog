@@ -4,8 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Your Blog",
     short_name: "Blog",
-    description:
-      "Welcome to Your Blog! Dive into a variety of articles that spark inspiration and share unique stories.",
+    description:"Welcome to Your Blog! Dive into a variety of articles that spark inspiration and share unique stories.",
     start_url: "/",
     display: "standalone",
     background_color: "#fff",

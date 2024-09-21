@@ -4,6 +4,7 @@ const url: string = "https://backendblog-eta.vercel.app/blog";
 export const fetchBlogData = async () => {
   try {
     const res = await axios.get(`${url}/getBlog`);
+    // await new Promise((resolve)=> setTimeout(resolve, 9000))
     return res.data.data;
   } catch (error: any) {
     console.log(

@@ -2,6 +2,14 @@ import { fetchBlogData } from "@/utils/FetchBlogData";
 import React from "react";
 import BlogData from "@/components/BlogData";
 import { Metadata } from "next";
+import { Suspense } from "react";
+import { BlogDocument } from "@/utils/interface";
+import BlogDataSkeleton from "@/components/blogComponent/BlogDataSkeleton";
+
+
+
+
+
 
 export const metadata: Metadata = {
   title: "Your Blog | Explore Creativity and Insights",
@@ -24,11 +32,14 @@ export const metadata: Metadata = {
   },
 };
 
-import { BlogDocument } from "@/utils/interface";
+
+
 const Blog = async () => {
+
   const data: BlogDocument[] = await fetchBlogData();
+  // await new Promise((resolve)=> setTimeout(resolve, 9000));
   // console.log("🚀 ~ file: page.tsx:7 ~ blog:", data);
-  const mydata=[...data].reverse();
+  const mydata = [...data].reverse();
   return (
     <div>
       <div className="py-10">
@@ -41,7 +52,40 @@ const Blog = async () => {
         ) : (
           <div className="grid grid-cols-1 max-w-7xl gap-4 m-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  ">
             {mydata?.map((value) => {
-              return <BlogData value={value} key={value._id} />;
+              return (
+                <Suspense
+                  fallback={
+                    <div className="W-80 h-96 bg-slate-800 round animate-pulse">
+                      <div className=" h-48 bg-gray-800 rounded-t-lg"></div>
+
+                      {/* Content Skeleton */}
+                      <div className="p-4">
+                        {/* Title Skeleton */}
+                        <div className="h-6 bg-gray-700 rounded mb-2"></div>
+
+                        {/* Description Skeleton */}
+                        <div className="space-y-2 mb-4">
+                          <div className="h-4 bg-gray-700 rounded"></div>
+                          <div className="h-4 bg-gray-700 rounded"></div>
+                          <div className="h-4 bg-gray-700 rounded w-2/3"></div>
+                        </div>
+
+                        {/* Author and Date Skeleton */}
+                        <div className="flex justify-between items-center mb-4">
+                          <div className="h-4 bg-gray-700 rounded w-1/3"></div>
+                          <div className="h-4 bg-gray-700 rounded w-1/4"></div>
+                        </div>
+
+                        {/* Button Skeleton */}
+                        <div className="h-10 bg-gray-700 rounded w-full"></div>
+                      </div>
+                    </div>
+                  }
+                  key={value._id}
+                >
+                  <BlogData value={value} />
+                </Suspense>
+              );
             })}
           </div>
         )}
