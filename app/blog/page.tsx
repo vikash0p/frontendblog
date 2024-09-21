@@ -4,7 +4,7 @@ import BlogData from "@/components/BlogData";
 import { Metadata } from "next";
 import { Suspense } from "react";
 import { BlogDocument } from "@/utils/interface";
-import BlogDataSkeleton from "@/components/blogComponent/BlogDataSkeleton";
+
 
 
 
