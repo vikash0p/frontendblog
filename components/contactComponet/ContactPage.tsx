@@ -27,7 +27,7 @@ const ContactPage: React.FC = () => {
             </div>
             <div className="flex items-center space-x-4">
               <FaMapMarkerAlt className="text-red-500 w-6 h-6" />
-              <span className="text-lg ">123 Street, City, Country</span>
+              <span className="text-lg ">123 Street, faridabad, HR</span>
             </div>
           </div>
 
