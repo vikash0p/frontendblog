@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Login | Artist Aura",
+    
     description:
       "Sign in to your Artist Aura account to unlock personalized features, save content, and engage with your favorite creative community.",
     images: "/public/images/login-banner.png", // Path to your Login page image for Twitter
